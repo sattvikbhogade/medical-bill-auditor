@@ -1,0 +1,11 @@
+from dataclasses import dataclass
+from os import getenv
+
+
+@dataclass(frozen=True)
+class Settings:
+    app_env: str = getenv("APP_ENV", "development")
+    database_url: str = getenv("DATABASE_URL", "")
+
+
+settings = Settings()

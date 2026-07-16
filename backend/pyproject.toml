@@ -6,12 +6,12 @@ build-backend = "setuptools.build_meta"
 name = "medical-bill-auditor-backend"
 version = "0.1.0"
 description = "FastAPI backend scaffold for the Medical Bill Auditor platform"
-requires-python = ">=3.11"
+requires-python = ">=3.14"
 dependencies = [
   "fastapi>=0.115.0",
   "uvicorn[standard]>=0.32.0",
   "sqlalchemy>=2.0.36",
-  "psycopg[binary]>=3.12.3",
+  "psycopg[binary]>=3.3.4",
   "pydantic-settings>=2.4.0",
 ]
 
